@@ -1,10 +1,10 @@
-# Bxios - 轻量级 HTTP 客户端
+# Bunxios - 轻量级 HTTP 客户端
 
 [English](./README_EN.md) | [简体中文](./README.md)
 
 ## 📖 概述
 
-Bxios 是一个基于原生 `fetch` API 封装的轻量级 HTTP 请求库，专为现代前端应用和 Bun/Node.js 环境设计。它提供了类似 Axios 的 API 体验，但体积更小，且原生支持 TypeScript。
+Bunxios 是一个基于原生 `fetch` API 封装的轻量级 HTTP 请求库，专为现代前端应用和 Bun/Node.js 环境设计。它提供了类似 Axios 的 API 体验，但体积更小，且原生支持 TypeScript。
 
 ## ✨ 核心特性
 
@@ -19,9 +19,9 @@ Bxios 是一个基于原生 `fetch` API 封装的轻量级 HTTP 请求库，专�
 ## 📦 安装
 
 ```bash
-bun add bxios
+bun add bunxios
 # 或者
-npm install bxios
+npm install bunxios
 ```
 
 ## 🚀 快速开始
@@ -29,7 +29,7 @@ npm install bxios
 ### 基础用法
 
 ```typescript
-import { HttpClient } from 'bxios';
+import { HttpClient } from 'bunxios';
 
 // 创建实例
 const client = new HttpClient({
@@ -74,7 +74,7 @@ const newUser = await client.post('/users', {
 
 ### 请求缓存
 
-Bxios 内置了简单的内存缓存功能。
+Bunxios 内置了简单的内存缓存功能。
 
 ```typescript
 // 启用缓存，默认 5 分钟
@@ -138,13 +138,13 @@ client.interceptors.response.use(
 
 ### 🧩 CLI 模板生成器
 
-Bxios 提供了一个 CLI 工具，用于快速生成符合规范的 Service 层代码。
+Bunxios 提供了一个 CLI 工具，用于快速生成符合规范的 Service 层代码。
 
 ```bash
 # 生成产品模块代码
-bunx bxios generate product
+bunx bunxios generate product
 # 或者简写
-bunx bxios g product
+bunx bunxios g product
 ```
 
 该命令将在 `src/modules/product/services/` 目录下生成 `product.service.ts` 文件，包含基础的 CRUD 方法和类型定义。
@@ -152,7 +152,7 @@ bunx bxios g product
 生成的代码示例：
 
 ```typescript
-import { HttpClient } from 'bxios';
+import { HttpClient } from 'bunxios';
 
 // TODO: 建议替换为全局配置的实例
 const http = new HttpClient({ baseURL: '/api' });

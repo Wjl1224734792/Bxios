@@ -1,10 +1,10 @@
-# Bxios - Lightweight HTTP Client
+# Bunxios - Lightweight HTTP Client
 
 [English](./README_EN.md) | [简体中文](./README.md)
 
 ## 📖 Overview
 
-Bxios is a lightweight HTTP client library based on the native `fetch` API, designed for modern frontend applications and Bun/Node.js environments. It offers an Axios-like API experience but with a smaller footprint and native TypeScript support.
+Bunxios is a lightweight HTTP client library based on the native `fetch` API, designed for modern frontend applications and Bun/Node.js environments. It offers an Axios-like API experience but with a smaller footprint and native TypeScript support.
 
 ## ✨ Key Features
 
@@ -19,9 +19,9 @@ Bxios is a lightweight HTTP client library based on the native `fetch` API, desi
 ## 📦 Installation
 
 ```bash
-bun add bxios
+bun add bunxios
 # or
-npm install bxios
+npm install bunxios
 ```
 
 ## 🚀 Quick Start
@@ -29,7 +29,7 @@ npm install bxios
 ### Basic Usage
 
 ```typescript
-import { HttpClient } from 'bxios';
+import { HttpClient } from 'bunxios';
 
 // Create instance
 const client = new HttpClient({
@@ -74,7 +74,7 @@ const newUser = await client.post('/users', {
 
 ### Request Caching
 
-Bxios includes a simple in-memory caching feature.
+Bunxios includes a simple in-memory caching feature.
 
 ```typescript
 // Enable cache, default 5 minutes
@@ -138,13 +138,13 @@ client.interceptors.response.use(
 
 ### 🧩 CLI Template Generator
 
-Bxios provides a CLI tool to quickly generate standardized Service layer code.
+Bunxios provides a CLI tool to quickly generate standardized Service layer code.
 
 ```bash
 # Generate product module code
-bunx bxios generate product
+bunx bunxios generate product
 # Or using the alias
-bunx bxios g product
+bunx bunxios g product
 ```
 
 This command will generate a `product.service.ts` file in the `src/modules/product/services/` directory, including basic CRUD methods and type definitions.
@@ -152,7 +152,7 @@ This command will generate a `product.service.ts` file in the `src/modules/produ
 Generated code example:
 
 ```typescript
-import { HttpClient } from 'bxios';
+import { HttpClient } from 'bunxios';
 
 // TODO: Replace with your globally configured instance
 const http = new HttpClient({ baseURL: '/api' });

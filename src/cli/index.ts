@@ -17,7 +17,7 @@ export async function runCli() {
 
   if (!moduleName) {
     console.error('❌ 错误: 请指定模块名称');
-    console.log('示例: bunx bxios generate product');
+    console.log('示例: bunx bunxios generate product');
     process.exit(1);
   }
 
@@ -31,14 +31,14 @@ export async function runCli() {
 
 function showHelp() {
   console.log(`
-Bxios CLI 工具
+Bunxios CLI 工具
 
 用法:
-  bxios generate <module-name>
-  bxios g <module-name>
+  bunxios generate <module-name>
+  bunxios g <module-name>
 
 示例:
-  bxios generate user    -> 生成 src/modules/user/services/user.service.ts
+  bunxios generate user    -> 生成 src/modules/user/services/user.service.ts
 `);
 }
 
@@ -48,7 +48,7 @@ function generateService(name: string) {
   // 转换为短横线命名 (user) - 简单处理
   const kebabName = name.toLowerCase();
 
-  const serviceTemplate = `import { HttpClient } from 'bxios';
+  const serviceTemplate = `import { HttpClient } from 'bunxios';
 
 // TODO: 建议将此实例移至统一的配置文件中
 const http = new HttpClient({
