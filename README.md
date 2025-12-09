@@ -18,8 +18,6 @@ Bunxios is a lightweight HTTP client library based on the native `fetch` API, de
 
 ## 📦 Installation
 
-> **Note**: This package is not yet published to npm. You can install it locally from the source code.
-
 ### Install from source
 
 ```bash

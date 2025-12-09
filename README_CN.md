@@ -1,6 +1,6 @@
 # Bunxios - 轻量级 HTTP 客户端
 
-[English](./README.md) | [简体中文](./README_CN.md)
+[Engish](./README.md) | [简体中文](./README_CN.md)
 
 ## 📖 概述
 
@@ -17,8 +17,6 @@ Bunxios 是一个基于原生 `fetch` API 封装的轻量级 HTTP 请求库，�
 - 🚀 **轻量高效** - 基于 Fetch API，零第三方运行时依赖
 
 ## 📦 安装
-
-> **注意**: 此包尚未发布到 npm。您可以从源代码本地安装。
 
 ### 从源码安装
 
